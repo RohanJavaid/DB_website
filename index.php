@@ -1,7 +1,8 @@
 <?php
 
-// Include the controller file
+// Include necessary files
 require_once 'Controller.php';
+
 
 // Instantiate the controller
 $controller = new Controller();

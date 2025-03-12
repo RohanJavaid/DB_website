@@ -30,9 +30,9 @@ class Book {
     }
 
     // Setter for author
-    public function setAuthor($author) {
-        $this->author = $author;
-    }
+    // public function setAuthor($author) {
+    //     $this->author = $author;
+    // }
 
     // Getter for description
     public function getDescription() {
@@ -46,7 +46,11 @@ class Book {
 
     // A method to return all the information about the book
     public function getBookInfo() {
-        return "Title: " . $this->getTitle() . "<br>Author: " . $this->getAuthor() . "<br>Description: " . $this->getDescription();
+        return "Title: " . $this->getTitle() . "<br>Author: "  . "<br>Description: " . $this->getDescription();
+    }
+
+    public function __toString() {
+        return "Title: $this->title, Author: $this->author, Year: $this->year";
     }
 }
 
